@@ -1,23 +1,156 @@
 /*Обнуление*/
-*{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-/*--------------------*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
 
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+/*--------------------*/
 
 body {
 	background-color: #f1f5f8;
+	font-family: 'Roboto', sans-serif;
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	align-items: center;
+	margin: 0 auto;
+	padding: 36px;
+}
+
+
+.container h1 {
+	font-size: 30px;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.container h4 {
+	font-size: 17px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.container .start {
+	font-size: 20px;
+}
+
+.container p {
+	font-style: 18px;
+	margin-bottom: 20px;
+	line-height: 1.4;
+}
+
+.image {
+	height: 100%;
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+.countdown {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	min-width: 320px;
+}
+
+.countdown-item {
+	/* background: linear-gradient(161.02deg, rgba(144, 38, 194, 0.8) 4.36%, rgba(51, 10, 116, 0.632) 97.44%); */
+	/* background: linear-gradient(134.53deg, rgba(126, 32, 191, 0.6) 3.68%, rgba(218, 74, 160, 0.6) 51.86%, rgba(254, 208, 81, 0.6) 91.03%); */
+	background: black;
+	padding: 6px;
+	min-width: 65px;
+	border-radius: 10px;
+	color:white;
+	font-weight: bold;
+	text-align: center;
+}

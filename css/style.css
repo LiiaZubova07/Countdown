@@ -155,3 +155,8 @@ body {
 	text-align: center;
 	line-height: 0.8;
 }
+
+.expired {
+	color: #2222;
+	margin: 0 auto;
+}

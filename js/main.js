@@ -1,7 +1,8 @@
 const items = document.querySelectorAll('.countdown-item > h4');
+const countdownElement = document.querySelector('.countdown');
 
 //Назначаю дату отсчёта
-let countdownDate = new Date(2023, 11, 18, 10, 0, 0);
+let countdownDate = new Date(2022, 11, 10, 22, 25, 0).getTime();
 
 function getCountdownTime() {
   //Получаю текущее время
@@ -26,11 +27,19 @@ function getCountdownTime() {
 
   //Создаю массив с переменными
   const values = [days, hours, minutes, seconds];
-  console.log(values);
-
+ 
   //Добавляю значения переменных на страницу
-  items.forEach(function(item, index){
-	item.textContent(values[index]);
+  items.forEach(function (item, index) {
+    item.textContent = values[index];
   });
+
+  if (distance < 0) {
+    clearInterval(countdown);
+	 countdownElement.innerHTML = "<h4 class='expired'>Time is over</h4>";
+  }
 }
+//Обновление счётчика каждую секунду
+let countdown = setInterval(getCountdownTime, 1000);
+
+//Инициализация текущего времени
 getCountdownTime();

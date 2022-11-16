@@ -141,6 +141,7 @@ body {
 	font-size: 16px;
 	color: white;
 	min-width: 320px;
+	margin: 20px;
 }
 
 .countdown-item {
